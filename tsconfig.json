@@ -1,6 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "baseUrl": ".",
+    "target": "es5",
+    "paths": {
+        "@shared/*": ["shared/*"],
+        "@interfaces/*": ["shared/interfaces/*"]
+        // "@proxies/*": ["proxies/*"],
+        // "@services/*": ["services/*"],
+        // "@const/*": ["const/*"],
+        // "@utils/*": ["utils/*"],
+        // "@styles/*": ["styles/*"]
+      },
     "lib": [
       "dom",
       "dom.iterable",
@@ -21,7 +31,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "tailwind.config.js", "postcss.config.js",
   ],
   "exclude": [
     "node_modules"

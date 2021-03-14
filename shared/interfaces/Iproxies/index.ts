@@ -1,0 +1,1 @@
+export { IActionsTable, IColumn, ITable } from './ITable'
